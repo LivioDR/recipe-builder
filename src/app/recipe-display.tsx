@@ -23,7 +23,7 @@ export function RecipeDisplay({ recipe }: { recipe: Recipe }) {
         <div>
           <h3 className="text-lg font-medium mb-2">Instructions</h3>
           <ol className="list-decimal pl-5 space-y-2">
-            {recipe.steps.map((step:Recipe.steps, index:number) => (
+            {recipe.steps.map((step:string, index:number) => (
               <li key={index} className="pl-1">
                 {step}
               </li>
